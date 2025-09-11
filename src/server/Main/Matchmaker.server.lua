@@ -41,4 +41,13 @@ Network.Events.MatchQueue.OnServerEvent:Connect(function(player, action, payload
             queues[partyId] = nil
         end
     end
+    elseif action == "SelectCharacter" then
+    local ok, reason = require(script.Parent.CharacterService).ValidateSelection(player.UserId, payload.charId, payload.skinId)
+    if ok then
+        -- Store selection in party data
+        -- e.g., queues[partyId].selections[player.UserId] = { charId = payload.charId, skinId = payload.skinId }
+    else
+        Network.Events.LobbyParty:FireClient(player, "SelectionFailed", reason)
+    end
+end
 end)

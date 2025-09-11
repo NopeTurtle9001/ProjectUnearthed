@@ -1,0 +1,22 @@
+- Characters:
+- Add a Def file in ReplicatedStorage/CharacterDefs and call CharacterRegistry.Register(def).
+- Provide Skills by adding entries in SkillLibrary or separate files you require there.
+- Skins and skill variants are just IDs; monetize via SharedConfig.Products maps.
+- Skills:
+- Use SkillBase; define ExecuteServer with server-side authority only. Client executes visuals in ExecuteClient or via VFX events.
+- Cooldowns are enforced on the server with per-user state.
+- Items:
+- Register new items by calling ItemRegistry.Register in a Def file. Modify stats via OnStatCalc and/or hook triggers in GameLoop.
+- Artifacts:
+- Register with ArtifactRegistry; mutate run parameters in ApplyRunModifiers.
+- Co-op item sharing:
+- Default “PartyShare” round-robin in InventoryService; or switch to “FreeForAll” in SharedConfig.
+- Manual sharing via ItemShareRequest, server-validated.
+- Sub-experience flow:
+- Main place handles parties and TeleportPartyAsync to SubExperiencePlaceId with TeleportData for artifacts/seed/character selection.
+- Sub-experience consumes TeleportData in TeleportHandler; apply artifacts before spawning enemies.
+- Monetization:
+- Developer products in ShopService.ProcessReceipt grant unlocks. Alternate path: grant via AchievementService.
+- Keep all grants server-side; the client only prompts and shows toasts.
+- Anti-exploit:
+- Rate-limit remotes, validate skill ownership and cooldowns server-side, do server raycasts/damage, and never trust client for item adds.
