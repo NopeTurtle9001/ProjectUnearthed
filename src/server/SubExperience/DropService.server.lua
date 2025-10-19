@@ -2,10 +2,10 @@
 local ServerStorage = game:GetService("ServerStorage")
 local CollectionService = game:GetService("CollectionService")
 
-local Network = require(game.ReplicatedStorage.Modules.Network)
-local ItemRegistry = require(game.ReplicatedStorage.Modules.ItemRegistry)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
+local ItemRegistry = require(game.ReplicatedStorage.Shared.Modules.ItemRegistry)
 local InventoryService = require(script.Parent.InventoryService)
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
 
 -- Requirements:
 -- - ServerStorage/ItemPickups contains simple pickup models named by ItemId with PrimaryPart and ProximityPrompt

@@ -2,8 +2,8 @@
 local MarketplaceService = game:GetService("MarketplaceService")
 local DataStoreService = game:GetService("DataStoreService")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local Network = require(game.ReplicatedStorage.Modules.Network)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
 
 local purchasesStore = DataStoreService:GetDataStore(SharedConfig.DataStore.Purchases)
 

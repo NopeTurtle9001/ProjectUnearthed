@@ -3,8 +3,8 @@ local Players = game:GetService("Players")
 local ServerStorage = game:GetService("ServerStorage")
 local CollectionService = game:GetService("CollectionService")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local RunState = require(game.ReplicatedStorage.Modules.RunState)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local RunState = require(game.ReplicatedStorage.Shared.Modules.RunState)
 
 local spawnPoints = workspace:WaitForChild("EnemySpawnPoints"):GetChildren()
 local enemyTemplates = ServerStorage:WaitForChild("EnemyTemplates"):GetChildren()

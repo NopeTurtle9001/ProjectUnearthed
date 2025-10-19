@@ -2,7 +2,7 @@
 local Players = game:GetService("Players")
 local GuiService = game:GetService("GuiService")
 
-local Network = require(game.ReplicatedStorage.Modules.Network)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
 
 -- Simple party UI bindings
 -- Example: buttons call:

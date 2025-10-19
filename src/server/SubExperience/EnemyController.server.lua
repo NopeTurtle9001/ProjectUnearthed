@@ -4,8 +4,8 @@ local PathfindingService = game:GetService("PathfindingService")
 local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local RunState = require(game.ReplicatedStorage.Modules.RunState)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local RunState = require(game.ReplicatedStorage.Shared.Modules.RunState)
 
 -- Tag enemies with "Enemy" and optional "Boss" for special handling.
 -- Enemy model requirements:

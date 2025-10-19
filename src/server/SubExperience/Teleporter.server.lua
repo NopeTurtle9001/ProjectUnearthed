@@ -4,9 +4,9 @@ local ServerStorage = game:GetService("ServerStorage")
 local CollectionService = game:GetService("CollectionService")
 local RunService = game:GetService("RunService")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local Network = require(game.ReplicatedStorage.Modules.Network)
-local RunState = require(game.ReplicatedStorage.Modules.RunState)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
+local RunState = require(game.ReplicatedStorage.Shared.Modules.RunState)
 
 -- Requirements in Workspace:
 -- - A Teleporter model with PrimaryPart and a Zone Part named "ActivationZone" (Touched region)

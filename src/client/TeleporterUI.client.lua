@@ -1,6 +1,6 @@
 -- StarterPlayerScripts/Client/TeleporterUI.client.lua
 local Players = game:GetService("Players")
-local Network = require(game.ReplicatedStorage.Modules.Network)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
 
 -- Assume a ScreenGui named RunHUD with:
 -- - TextLabel StageLabel

@@ -2,8 +2,8 @@
 local DataStoreService = game:GetService("DataStoreService")
 local Players = game:GetService("Players")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local CharacterRegistry = require(game.ReplicatedStorage.Modules.CharacterRegistry)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local CharacterRegistry = require(game.ReplicatedStorage.Shared.Modules.CharacterRegistry)
 
 local purchasesStore = DataStoreService:GetDataStore(SharedConfig.DataStore.Purchases)
 

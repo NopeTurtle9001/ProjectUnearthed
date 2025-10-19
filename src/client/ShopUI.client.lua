@@ -1,7 +1,7 @@
 -- StarterPlayerScripts/Client/ShopUI.client.lua
 local MarketplaceService = game:GetService("MarketplaceService")
 local Players = game:GetService("Players")
-local Network = require(game.ReplicatedStorage.Modules.Network)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
 
 -- When user clicks buy button:
 -- Network.Events.ShopPrompt:FireServer("Character", "Warden")

@@ -1,6 +1,6 @@
 -- StarterPlayerScripts/Client/Input.client.lua
 local UserInputService = game:GetService("UserInputService")
-local Network = require(game.ReplicatedStorage.Modules.Network)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
 
 local function sendSkill(skillId)
     local char = workspace:FindFirstChild(game.Players.LocalPlayer.Name)

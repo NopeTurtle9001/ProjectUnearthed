@@ -1,9 +1,9 @@
 -- ServerScriptService/SubExperience/InventoryService.server.lua
 local Players = game:GetService("Players")
 
-local Network = require(game.ReplicatedStorage.Modules.Network)
-local ItemRegistry = require(game.ReplicatedStorage.Modules.ItemRegistry)
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
+local ItemRegistry = require(game.ReplicatedStorage.Shared.Modules.ItemRegistry)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
 
 local InventoryService = {}
 local inv = {} -- [userId] = { [itemId] = stacks }

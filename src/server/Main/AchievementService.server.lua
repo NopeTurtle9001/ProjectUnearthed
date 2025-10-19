@@ -1,7 +1,7 @@
 -- ServerScriptService/Main/AchievementService.server.lua
 local DataStoreService = game:GetService("DataStoreService")
 local Players = game:GetService("Players")
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
 
 local achieveStore = DataStoreService:GetDataStore(SharedConfig.DataStore.Achievements)
 local cache = {} -- [userId] = { [achId] = true }

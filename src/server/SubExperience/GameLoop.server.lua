@@ -2,10 +2,10 @@
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local Network = require(game.ReplicatedStorage.Modules.Network)
-local SkillLibrary = require(game.ReplicatedStorage.Modules.SkillSystem.SkillLibrary)
-local CharacterRegistry = require(game.ReplicatedStorage.Modules.CharacterRegistry)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
+local SkillLibrary = require(game.ReplicatedStorage.Shared.Modules.SkillSystem.SkillLibrary)
+local CharacterRegistry = require(game.ReplicatedStorage.Shared.Modules.CharacterRegistry)
 local InventoryService = require(script.Parent.InventoryService)
 
 local playerState = {} -- [userId] = { character = "Ranger", stats = {}, cooldowns = {} }

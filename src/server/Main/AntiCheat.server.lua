@@ -1,7 +1,7 @@
 -- ServerScriptService/Main/AntiCheat.server.lua
-local Network = require(game.ReplicatedStorage.Modules.Network)
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local Util = require(game.ReplicatedStorage.Modules.Util)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local Util = require(game.ReplicatedStorage.Shared.Modules.Util)
 
 local rate = {} -- [userId] = { skill = limiter, share = limiter }
 

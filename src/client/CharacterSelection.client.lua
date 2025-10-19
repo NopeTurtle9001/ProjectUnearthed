@@ -1,8 +1,8 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Network = require(ReplicatedStorage.Modules.Network)
-local CharacterRegistry = require(ReplicatedStorage.Modules.CharacterRegistry)
+local Network = require(ReplicatedStorage.Shared.Modules.Network)
+local CharacterRegistry = require(ReplicatedStorage.Shared.Modules.CharacterRegistry)
 
 local player = Players.LocalPlayer
 

@@ -2,8 +2,8 @@
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 
-local SharedConfig = require(game.ReplicatedStorage.Modules.SharedConfig)
-local Network = require(game.ReplicatedStorage.Modules.Network)
+local SharedConfig = require(game.ReplicatedStorage.Shared.Modules.SharedConfig)
+local Network = require(game.ReplicatedStorage.Shared.Modules.Network)
 
 local queues = {} -- [partyId] = { leaderUserId, members = {userId...}, artifacts = {...} }
 
